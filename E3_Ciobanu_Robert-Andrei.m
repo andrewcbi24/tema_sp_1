@@ -5,3 +5,9 @@ vcomp=vcomp';
 [medie,vector,matrice]=functii(vcomp);
 
 end
+
+
+function [medie,vector,matrice] = functii(vcomp)
+medie=mean(real(vcomp));
+vector=vcomp.^2;
+matrice=vcomp*vcomp';
